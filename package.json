@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "greenlock-express": "^4.0.3"
+    "@greenlock/store-sequelize": "^3.0.3",
+    "express": "^4.17.1",
+    "greenlock-express": "^4.0.3",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4"
   }
 }

@@ -1,7 +1,8 @@
 {
   "defaults": {
     "store": {
-      "module": "greenlock-store-fs"
+      "storeDatabaseUrl": "postgres://postgres:root@localhost:5432/greenlock",
+      "module": "@greenlock/store-sequelize"
     },
     "challenges": {
       "http-01": {
@@ -14,5 +15,6 @@
     "serverKeyType": "RSA-2048",
     "subscriberEmail": "marko@digitalinfinity.rs"
   },
-  "sites": []
+  "sites": [
+  ]
 }

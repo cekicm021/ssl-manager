@@ -1,9 +1,18 @@
-'use strict';
+"use strict";
 
-// Here's a vanilla HTTP app to start,
-// but feel free to replace it with Express, Koa, etc
-var app = function(req, res) {
-    res.end('Hello, Encrypted World!');
-};
+// A plain, node-style app
+function myPlainNodeHttpApp(req, res) {
+	res.end("Hello, Encrypted World!");
+}
+
+// Wrap that plain app in express,
+// because that's what you're used to
+
+var express = require("express");
+var app = express();
+app.get("/", myPlainNodeHttpApp);
+
+// export the app normally
+// do not .listen()
 
 module.exports = app;
