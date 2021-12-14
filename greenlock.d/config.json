@@ -21,6 +21,21 @@
         "example.com"
       ],
       "renewAt": 1
+    },
+    {
+      "subject": "cekicm.xyz",
+      "altnames": [
+        "cekicm.xyz",
+        "www.cekicm.xyz"
+      ],
+      "renewAt": 1643149671043
+    },
+    {
+      "subject": "test.cekicm.xyz",
+      "altnames": [
+        "test.cekicm.xyz"
+      ],
+      "renewAt": 1
     }
   ]
 }
