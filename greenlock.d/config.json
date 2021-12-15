@@ -1,7 +1,7 @@
 {
   "defaults": {
     "store": {
-      "storeDatabaseUrl": "postgres://postgres:root@localhost:5432/greenlock",
+      "storeDatabaseUrl": "postgres://postgres:root@localhost:5432/sll",
       "module": "@greenlock/store-sequelize"
     },
     "challenges": {

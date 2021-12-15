@@ -1,16 +1,44 @@
 "use strict";
 
-// A plain, node-style app
+const express = require("express");
+const app = express();
+const Greenlock = require("greenlock");
+const greenlock = Greenlock.create({
+	packageRoot: __dirname,
+
+	// contact for security and critical bug notices
+	maintainerEmail: "marko@digitalinfinity.rs",
+
+	// where to look for configuration
+	configDir: "./greenlock.d",
+
+	// whether or not to run at cloudscale
+	cluster: false,
+});
+
 function myPlainNodeHttpApp(req, res) {
 	res.end("Hello, Encrypted World!");
 }
-
-// Wrap that plain app in express,
-// because that's what you're used to
-
-var express = require("express");
-var app = express();
+function add(req, res) {
+	greenlock
+		.add({
+			subject: "cekicm.xyz",
+			altnames: ["cekicm.xyz"],
+		})
+		.then((response) => {
+			res.send(response);
+		});
+}
 app.get("/", myPlainNodeHttpApp);
+
+app.get("/add", add);
+app.get("/test", (req, res) => {
+	res.send({ msg: "test" });
+});
+
+// if (require.main === module) {
+// 	app.listen(3000);
+// }
 
 // export the app normally
 // do not .listen()
