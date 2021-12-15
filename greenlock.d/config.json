@@ -1,7 +1,7 @@
 {
   "defaults": {
     "store": {
-      "storeDatabaseUrl": "postgres://postgres:root@localhost:5432/ssl",
+      "storeDatabaseUrl": "postgres://nimmly:root@localhost:5432/ssl",
       "module": "@greenlock/store-sequelize"
     },
     "challenges": {
@@ -13,7 +13,8 @@
     "renewStagger": "3d",
     "accountKeyType": "EC-P256",
     "serverKeyType": "RSA-2048",
-    "subscriberEmail": "marko@digitalinfinity.rs"
+    "subscriberEmail": "marko@digitalinfinity.rs",
+    "agreeToTerms": true
   },
   "sites": [
     {
