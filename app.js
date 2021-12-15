@@ -23,7 +23,7 @@ function add(req, res) {
 	greenlock
 		.add({
 			subject: "cekicm.xyz",
-			altnames: ["cekicm.xyz"],
+			altnames: ["cekicm.xyz","www.cekicm.xyz"],
 		})
 		.then((response) => {
 			res.send(response);
@@ -42,5 +42,5 @@ app.get("/test", (req, res) => {
 
 // export the app normally
 // do not .listen()
-
+app.listen(80,443);
 module.exports = app;

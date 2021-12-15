@@ -16,5 +16,13 @@
     "subscriberEmail": "marko@digitalinfinity.rs"
   },
   "sites": [
+    {
+      "subject": "cekicm.xyz",
+      "altnames": [
+        "cekicm.xyz",
+        "www.cekicm.xyz"
+      ],
+      "renewAt": 1
+    }
   ]
 }

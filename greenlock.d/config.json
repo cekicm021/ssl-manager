@@ -1,7 +1,7 @@
 {
   "defaults": {
     "store": {
-      "storeDatabaseUrl": "postgres://postgres:root@localhost:5432/sll",
+      "storeDatabaseUrl": "postgres://postgres:root@localhost:5432/ssl",
       "module": "@greenlock/store-sequelize"
     },
     "challenges": {
@@ -15,5 +15,14 @@
     "serverKeyType": "RSA-2048",
     "subscriberEmail": "marko@digitalinfinity.rs"
   },
-  "sites": []
+  "sites": [
+    {
+      "subject": "cekicm.xyz",
+      "altnames": [
+        "cekicm.xyz",
+        "www.cekicm.xyz"
+      ],
+      "renewAt": 1
+    }
+  ]
 }
