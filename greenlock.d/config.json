@@ -1,7 +1,7 @@
 {
   "defaults": {
     "store": {
-      "storeDatabaseUrl": "postgres://postgres:root@localhost:5432/greenlock",
+      "storeDatabaseUrl": "postgres://postgres:root@localhost:5432/ssl",
       "module": "@greenlock/store-sequelize"
     },
     "challenges": {
@@ -29,7 +29,7 @@
         "cekicm.xyz",
         "www.cekicm.xyz"
       ],
-      "renewAt": 1643149671043
+      "renewAt": 1643218719471
     },
     {
       "subject": "test.cekicm.xyz",
