@@ -1,1 +1,1 @@
-{"manager":{"module":"@greenlock/manager"},"configDir":"./greenlock.d"}
+{"manager":{"module":"/Users/nimmly/Documents/work/ssl-manager/node_modules/@thingsup/greenlock-sql-manager/greenlockManager","defaults":{"subscriberEmail":"info@iobot.in"},"storeDefaults":{"storeDatabaseUrl":"postgres://nimmly:root@localhost:5432/ssl"}},"configDir":"./greenlock.d"}

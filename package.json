@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@greenlock/store-sequelize": "^3.0.3",
+    "@thingsup/greenlock-sql-manager": "^1.0.1",
     "express": "^4.17.1",
-    "greenlock-express": "^4.0.3",
+    "body-parser": "^1.19.0",
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4"
   }
